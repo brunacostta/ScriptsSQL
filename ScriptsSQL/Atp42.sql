@@ -1,4 +1,4 @@
--- Utilize as tabelas criadas durante a atividade prï¿½tica 41.
+-- Utilize as tabelas criadas durante a atividade prática 41.
 -- Insira 3 categorias na tabela categoria.
 
 insert into categoria(nome, descricao)values('alimento','a');
@@ -13,7 +13,7 @@ insert into produto(nome,descricao,preco,categoria_id)values('carne','proteina',
 insert into produto(nome,descricao,preco,categoria_id)values('guarda-roupa','quarto',1500.99,3);
 insert into produto(nome,descricao,preco,categoria_id)values('aspirador','limpeza',456.99,4);
 
--- Altere a descriï¿½ï¿½o de dois produtos.
+-- Altere a descrição de dois produtos.
 update produto set descricao = 'alimento' where id = 2;
 update produto set descricao = 'alimento' where categoria_id = 2;
 
@@ -23,5 +23,5 @@ delete from produto where id = 2;
 -- Altere uma categoria de um produto.
 update produto set categoria_id = 3 where id = 8;
 
--- Altere o preï¿½o de todos os produtos tirando R$1,00 do preï¿½o atual.
+-- Altere o preço de todos os produtos tirando R$1,00 do preço atual.
 update produto set preco = preco - 1.0 where id > 0 and id < 10;
